@@ -9,11 +9,15 @@ package unitec.proyecto.geometria;
  *
  * @author T-107
  */
-public class Triangulo  {
+public class Triangulo implements Superficies {
 
     float base;
     float altura;
 
+    
+    public Triangulo() {
+    }
+    
     public float getBase() {
         return base;
     }
@@ -23,19 +27,21 @@ public class Triangulo  {
     }
 
 
-    public Triangulo() {
-    }
 
     public Triangulo(float base) {
         this.base = base;
          this.altura = altura;
     }
     
-    public float calularArea(){
-        return (base*altura)/2f;
+    public float calcularArea(){
+        System.out.print("El area del triangulo es:");
+        return (base*altura)/2f;  
         
-        
-        
+    }
+
+    public Triangulo(float base, float altura) {
+        this.base = base;
+        this.altura = altura;
     }
     
 }

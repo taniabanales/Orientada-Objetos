@@ -9,7 +9,7 @@ package unitec.proyecto.geometria;
  *
  * @author T-107
  */
-public class Rectangulo {
+public class Rectangulo implements Superficies {
     private float ladoMayor;
     private float ladoMenor;
     
@@ -23,7 +23,8 @@ public class Rectangulo {
         this.ladoMenor = ladoMenor;
     }
     public float calcularArea(){
-        return ladoMayor+ladoMenor;
+        System.out.print("El area del rectangulo es:");
+        return ladoMayor*ladoMenor;
         
     }
 }
